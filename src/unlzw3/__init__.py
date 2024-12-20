@@ -22,6 +22,7 @@ madler@alumni.caltech.edu
 
 from .unlzw import unlzw
 
+
 __all__ = ["unlzw"]
 
 __version__ = "0.2.3"
