@@ -127,7 +127,8 @@ def unlzw(inp) -> bytes:
         left += 8
         if left < bits:
             if nxt == inlen:
-                raise ValueError("Invalid Data: Stream ended in the middle of a code")
+                #raise ValueError("Invalid Data: Stream ended in the middle of a code")
+                break
             buf += ba_in[nxt] << left
             nxt += 1
             left += 8
